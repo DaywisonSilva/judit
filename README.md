@@ -7,9 +7,9 @@ A aJud. é uma plataforma que te auxiliará a dar os primeiros passos para enten
 # Como visualizar o projeto?
 Passos: 
 <br>
-Passo 1: clone o repositório com o comando ```git clone https://github.com/DaywisonSilva/judit.git``` 
+Passo 1: Clone o repositório com o comando ```git clone https://github.com/DaywisonSilva/judit.git``` 
 <br>
-Passo 2: vá até a pasta onde o arquivo ficou salvo e abra a página "index.html".
+Passo 2: Vá até a pasta onde o arquivo ficou salvo e abra o arquivo "index.html" no seu navegador de preferência.
 
 ## Link do site
 Para visualizar o projeto hospedado, basta clicar aqui: [aJud](https://ajud.netlify.app/)
