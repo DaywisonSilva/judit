@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f7f7f7;
+}
+
+.modal {
+    position: fixed;
+    width: 65%;
+    height: 80vh;
+    top: 10vh;
+    left: 17.5%;
+    background-color: #ffffff;
+    overflow: auto;
+    display: flex;
+    border-radius: 4px;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.17);
+}
+
+.modal__info-container {
+    width: 65%;
+    padding: 40px 80px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.modal__info-container input {
+    width: 100%;
+    height: 56px;
+    padding: 0 16px;
+    background: #FFFFFF;
+    border: 1px solid #BFBFBF;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+}
+
+.modal__info-container input[type="submit"] {
+    background-color: #117BBC;
+    margin-top: 24px;
+    color: white;
+}
+
+.modal__info-container p {
+    line-height: 0px;
+}
+
+.modal__info-container form {
+    height: 238px;
+    width: 100%;
+    margin-bottom: 90px;
+}
+
+.modal__info-container a {
+    display: block;
+    text-align: center;
+    font-weight: 600;
+    color: #731717;
+}
+
+.modal__background {
+    width: 35%;
+    height: 100%;
+    background-image: linear-gradient(to top, #731717e5 10%, transparent), linear-gradient(to bottom, #731717b0, transparent 80%), url('../images/image-modal.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom, top, top left;
+}
+
+@media (max-width: 700px) {
+    .modal__background {
+        display: none;
+    }
+    .modal {
+        top: calc(7.5%);
+        min-height: 85vh;
+    }
+    .modal__info-container {
+        width: 100%;
+        padding: 40px 20px;
+        box-sizing: border-box;
+    }
+}
+
+@media(max-width: 500px) {
+    .modal {
+        width: 90%;
+        left: 5%;
+    }
+}

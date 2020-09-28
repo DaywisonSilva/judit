@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/form.css">
+    <title>Cadastre-se!</title>
+</head>
+
+<body>
+    <div class="modal d-none">
+        <div class="modal__info-container">
+            <img src="images/logotipo.svg" alt="logotipo ajud.">
+            <h1>Faça seu cadastro</h1>
+            <form action="#" method="GET">
+                <label>
+                    <p>E-mail:</p>
+                    <input type="text" placeholder="Digite seu e-mail" class="modal__user">
+                </label>
+                <label>
+                    <p>Senha:</p>
+                    <input type="password" placeholder="Digite sua senha" class="modal__password">
+                </label>
+                <input type="submit" value="Entrar" class="modal__btnSubmit">
+                <a href="#">
+                    Esqueceu sua Senha?
+                </a>
+            </form>
+        </div>
+        <div class="modal__background">
+        </div>
+    </div>
+
+    <script>
+        document.querySelector('.modal__btnSubmit').addEventListener('click', function (e) {
+            e.preventDefault();
+            let email = document.querySelector('.modal__user');
+            let senha = document.querySelector('.modal__password');
+            if (email.value && senha.value) {
+                window.open('pageuser.html', '_self')
+            }
+        })
+    </script>
+</body>
+
+</html>

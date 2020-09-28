@@ -1,0 +1,14 @@
+.WACLauncher__ButtonContainer{
+    bottom: 80px !important;
+}
+
+/* @media(min-width: 700px) {
+    #WACWidget {
+        width: 95% !important;
+        height: 80vh !important;
+        position: absolute !important;
+        left: 2.5% !important;
+        box-shadow: 0px 4px 20px rgba(115, 23, 23, 0.1) !important;
+    }
+}
+ */

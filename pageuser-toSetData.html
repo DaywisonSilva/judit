@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Bem-vindo e bem-vinda! A aJud. é uma plataforma que te auxiliará a dar os primeiros passos para entender se você tem um problema jurídico, do que se trata e o que pode fazer para começar a solucioná-lo! Por meio de um chat intuitivo, a plataforma o guiará pelas opções e retornará um resumo do seu caso para descomplicá-lo, além de indicar qual especialidade da advocacia você deve procurar. Vamos começar?">
+    <meta name="keywords" content="direito, jurídico, processo">
+    <script src="js/getLocation.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcXVOYJDSkmcMY37jjsj_1UNLZrG8KLQc&callback=initAutocomplete&libraries=places&v=weekly"
+        defer></script>
+    <script src="js/chatbot.js"></script>
+    <link rel="stylesheet" href="css/chatboot.css">
+    <link rel="stylesheet" href="css/map.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/cadastro.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <title>Home</title>
+</head>
+
+<body>
+    <header class="header">
+        <img src="images/logotipo.svg" alt="logotipo do serviço ajud." title="logotipo do serviço ajud."
+            aria-describedat="logotipo do serviço ajud." class="header__logo">
+        <div class="header__container-info">
+            <button class="header__container-user">
+                <p class="header__username">Paula Mendes</p>
+                <img src="images/user.svg" alt="logotipo de usuário" class="header__user-image">
+            </button>
+            <button class="header__btn">Entre em contato</button>
+        </div>
+    </header>
+    <main>
+        <section class="sectionOne">
+            <div class="sectionOne__container-info">
+                <h1 class="sectionOne__title-h1">Olá Paula, bem-vinda ao aJud.</h1>
+                <p>Estamos aqui para te auxiliar a tomar as melhores decisões sobre o seu caso e encontrar os melhores
+                    profissionais. Veja abaixo todas as informações relevantes sobre seu processo e aproveite para
+                    pesquisar advogados e instituições próximos a você!</p>
+            </div>
+        </section>
+        <section class="sectionTwo">
+            <div class="sectionTwo__container-warning">
+                <div class="section__icon-warning">
+                    <img src="images/danger.svg" alt="ícone de alerta para identificar um aviso importante">
+                </div>
+                <div class="sectionTwo__warning">
+                    <p>As informações aqui presentes foram baseadas nas respostas dadas por você e podem não refletir a
+                        realidade e totalidade do caso. Estas informações têm caráter meramente educativo e não
+                        substituem a consulta à um profissional qualificado.</p>
+                </div>
+            </div>
+        </section>
+        <section class="section-info-container">
+            <div class="sectionThree__header-article">
+                <h1 class="sectionThree__title-h1">Veja todas as informações sobre seu processo</h1>
+                <button class="sectionThree__print">
+                    <img src="images/print.svg" alt="ícone de impressora">
+                    <p>Imprimir informações</p>
+                </button>
+            </div>
+        </section>
+        <section class="sectionThree">
+            <article class="sectionThree__article-one">
+                <h2 class="sectionThree__h2">Sobre seu caso</h2>
+                <ul class="sectionThree__list-info">
+                    <li class="sectionThree__list-item"><span class="sectionThree__em">1)&nbsp;</span>Possível
+                        Indenização e verbas trabalhistas por demissão sem justa causa.</li>
+                    <li class="sectionThree__list-item"><span class="sectionThree__em">2)&nbsp;</span>Possível assédio
+                        moral no trabalho.</li>
+                    <li class="sectionThree__list-item"><span class="sectionThree__em">3)&nbsp;</span>Possível
+                        indenização por violação à suspensão do contrato de trabalho (Lei 14.020 de 06 de julho de
+                        2020).</li>
+                </ul>
+                <p><span class="sectionThree__em">A área do Direito que seu caso está:&nbsp;</span>Direito Trabalhista
+                </p>
+                <p><span class="sectionThree__em">Você deve procurar um advogado de:&nbsp;</span>Advogado Trabalhista.
+                    Abaixo você tem acesso à uma série de advogados desta área e unidades da Defensoria Pública próximos
+                    a você.</p>
+                <p><span class="sectionThree__em">Atenção:&nbsp;</span>As informações acima não substituem a orientação
+                    por um advogado e não garantem o ganho ou perda do seu caso.</p>
+            </article>
+            <article class="sectionThree__article-two">
+                <h2 class="sectionThree__h2">Assistência jurídica gratuita</h2>
+                <p><span class="sectionThree__em">Tem direito à assistência jurídica gratuita na Defensoria
+                        Pública:&nbsp;</span>
+                    Não. Mesmo assim, você pode procurar núcleos de assistência judiciária. Em São Paulo, consultar o
+                    endereço: <a href="https://www.oabsp.org.br/informacoesuteis/enderecos-para-assistencia-judiciaria"
+                        target="_blank">https://www.oabsp.org.br/informacoesuteis/enderecos-para-assistencia-judiciaria</a>
+                </p>
+            </article>
+            <article class="sectionThree__article-three">
+                <h2 class="sectionThree__h2">Informações gerais</h2>
+                <p><span class="sectionThree__em">Demissão voluntária, sem justa causa ou com justa
+                        causa?&nbsp;</span>Demissão sem justa causa.</p>
+                <p><span class="sectionThree__em">Insalubridade?&nbsp;</span>Não.</p>
+                <p><span class="sectionThree__em">Periculosidade?&nbsp;</span>Não.</p>
+                <hr>
+                <p><span class="sectionThree__em">Hora extra:&nbsp;</span>Sim.</p>
+                <p><span class="sectionThree__em">Com pagamento, banco de horas ou compensação? Se sim, diga
+                        qual?:&nbsp;</span>Não recebi nada.</p>
+                <p><span class="sectionThree__em">Mais que 2h extras por dia?&nbsp;</span>Não.</p>
+                <blockquote class="sectionThree__quote">
+                    A realização de horas extras está limitada a, no máximo, 2 horas diárias, e o valor por hora deve
+                    ser, no mínimo, 50% superior à normal (artigo 59, §1º, Decreto-Lei nº 5.452 de 1º de maio de 1943).
+                    Procure um advogado abaixo.
+                </blockquote>
+                <hr>
+                <p><span class="sectionThree__em">Aviso prévio trabalhado ou indenizado?&nbsp;</span>Não recebi aviso
+                    prévio indenizado e também não trabalhei.</p>
+                <blockquote class="sectionThree__quote">
+                    O empregador que demitir sem justa causa ou o empregado que se demite deve comunicar a outra parte
+                    com 30 dias de antecedência, para aqueles que receberem salário por mês ou a cada 15 dias, ou ainda
+                    aqueles com mais de um ano de empresa. Na falta deste aviso, deve haver o pagamento do salário como
+                    indenização (art. 487, II, §1º, Decreto-Lei nº 5.452 de 1º de maio de 1943). Procure um advogado
+                    abaixo.
+                </blockquote>
+                <hr>
+                <p><span class="sectionThree__em">Você já se sentiu constrangida, humilhada, sobrecarregada, perseguida
+                        ou com tarefas de trabalho inadequadas para seu cargo?&nbsp;</span>Sim.</p>
+                <p><span class="sectionThree__em">Esta situação foi frequente ou repetitiva?&nbsp;</span>Sim.</p>
+                <blockquote class="sectionThree__quote">
+                    Isto pode ser assédio moral no trabalho, uma prática ilegal e pode gerar direito à indenização
+                    (artigos 186, 187 e 927 e seguintes do Código Civil de 2002). Procure um advogado abaixo.
+                </blockquote>
+            </article>
+            <article class="sectionThree__article-four">
+                <h2 class="sectionThree__h2">Informações sobre <abbr
+                        title="coronavírus da síndrome respiratória aguda grave 2">covid-19</abbr></h2>
+                <p><span class="sectionThree__em">Teve redução salarial? Se sim, qual porcentagem?&nbsp;</span>Sim. 50%.
+                </p>
+                <p><span class="sectionThree__em">Teve o contrato de trabalho suspenso?&nbsp;</span>Sim.</p>
+                <p><span class="sectionThree__em">Você teve que trabalhar durante o período de
+                        suspensão?&nbsp;</span>Sim.</p>
+                <p><span class="sectionThree__em">Seu empregador pagou a multa e as verbas trabalhistas referente à
+                        quebra da suspensão?&nbsp;</span>Não, não recebi nada.</p>
+            </article>
+            <article class="sectionThree__article-four">
+                <h2 class="sectionThree__h2">Informações necessárias para o andamento do seu processo</h2>
+                <p>Nome, data de nascimento, cidade natal, RG, CPF, profissão, CTPS, série, PIS, Escolaridade, Mãe, Pai,
+                    Endereço, telefone e e-mail.</p>
+            </article>
+            <article class="sectionThree__article-five">
+                <h2 class="sectionThree__h2">Documentação necessária para apresentar ao advogado no dia de sua consulta
+                </h2>
+                <p>RG, CPF, CTPS, Extrato FGTS, recibos de salário ou extrato bancário, comprovante de residência e
+                    quaisquer outros documentos pertinentes ao seu caso, por exemplo: cartão de ponto assinado, trocas
+                    de e-mail e mensagens instantâneas.</p>
+                <p><span class="sectionThree__em">Atenção:&nbsp;</span>você pode precisar de mais documentos além dos
+                    listados aqui, que deverão ser solicitados pela sua advogada. Mantenha todos seus documentos em
+                    segurança, mesmo que considere pouco importante. </p>
+            </article>
+        </section>
+        <section class="sectionFour">
+            <div class="sectionFour__info">
+                <h2 class="sectionFour__title-h2">Encontre unidades da Defensoria Pública próximas a você</h2>
+                <!-- <div class="sectionFour__input-container">
+                    <input id="pac-input" class="controls" type="text" placeholder="Digite seu cep">
+                    <div class="sectionFour__search-icon">
+                        <div class="sectionFour__search-icon">
+                            <img src="images/search.svg" alt="ícone de pesquisa">
+                        </div>
+                    </div>
+                </div> -->
+        </section>
+    </main>
+    <input id="pac-input" class="controls" type="text" placeholder="Digite seu cep">
+    <div id="map"></div>
+    <footer class="footer">
+        <span>Termos e política de privacidade</span>
+        <div class="footer__socials">
+            <a href="#">
+                <img src="images/social-images/twitter.svg" alt="twitter">
+            </a>
+            <a href="#">
+                <img src="images/social-images/facebook.svg" alt="facebook">
+            </a>
+            <a href="#">
+                <img src="images/social-images/google.svg" alt="google">
+            </a>
+        </div>
+    </footer>
+    <div class="modal d-none">
+        <h1>O resumo do seu processo está pronto!</h1>
+        <p>Para salvar esse dados e ter acesso a eles em outro momento, que tal fazer seu cadastro?</p>
+        <button id="btn-cadastro">Fazer meu cadastro</button>
+        <button id="btn-mais-tarde">Fazer isso mais tarde</button>
+    </div>
+    <div class="message-container"></div>
+    <script src="js/map.js"></script>
+    <script src="js/home.js"></script>
+</body>
+
+</html>
